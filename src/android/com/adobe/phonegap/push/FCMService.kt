@@ -39,7 +39,7 @@ import java.util.*
  */
 @Suppress("HardCodedStringLiteral")
 @SuppressLint("NewApi", "LongLogTag", "LogConditional")
-class FCMService : FirebaseMessagingService() {
+open class FCMService : FirebaseMessagingService() {
   companion object {
     private const val TAG = "${PushPlugin.PREFIX_TAG} (FCMService)"
 
